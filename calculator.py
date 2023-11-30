@@ -12,8 +12,14 @@ while True:
 #     tokenize input
     tokens = user_input.split(" ")
 
-    num1 = tokens[1]
-    num2 = tokens[2]
+
+    if len(tokens) > 3:
+        num1 = tokens[1] 
+        num2 = tokens[2]
+    else:
+        num1 = tokens[1]
+        num2 = "0"
+
 #         if the first token is "q":
     if "q" in tokens:
         print("Quitting game")
@@ -27,12 +33,12 @@ while True:
         
     elif "*" in tokens:
         print(multiply(float(num1),float(num2)))
+
     elif "/" in tokens:
         print(divide(float(num1),float(num2)))
 
-        
-#             (decide which math function to call based on first token)
-#             if the first token is 'pow':
-#                   call the power function with the other two tokens
+    elif "square" in tokens:
+        print(square(float(num1)))
 
-#             (...etc.)
+        
+

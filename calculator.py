@@ -39,6 +39,9 @@ while True:
 
     elif "square" in tokens:
         print(square(float(num1)))
+    
+    elif "cube" in tokens:
+        print(cube(float(num1)))
 
         
 

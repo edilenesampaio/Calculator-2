@@ -27,6 +27,8 @@ while True:
         
     elif "*" in tokens:
         print(multiply(float(num1),float(num2)))
+    elif "/" in tokens:
+        print(divide(float(num1),float(num2)))
 
         
 #             (decide which math function to call based on first token)

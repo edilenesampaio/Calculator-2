@@ -45,6 +45,8 @@ while True:
 
     elif "power" in tokens:
         print(power(float(num1),float(num2)))
-
+        
+    elif "mod" in tokens:
+        print(mod(float(num1),float(num2)))
         
 

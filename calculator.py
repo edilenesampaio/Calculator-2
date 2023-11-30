@@ -13,7 +13,7 @@ while True:
     tokens = user_input.split(" ")
 
 
-    if len(tokens) > 3:
+    if len(tokens) >= 3:
         num1 = tokens[1] 
         num2 = tokens[2]
     else:
@@ -42,6 +42,9 @@ while True:
     
     elif "cube" in tokens:
         print(cube(float(num1)))
+
+    elif "power" in tokens:
+        print(power(float(num1),float(num2)))
 
         
 
